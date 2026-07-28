@@ -1,3 +1,8 @@
-# AHB2APB-Bridge
-Designed and implemented an AHB-to-APB bridge in Verilog and developed a UVM-based Verification IP (VIP) to verify its functionality.
-Formal verification is performed with System Verilog Assertions
+# AHB-to-APB Bridge Design and Verification
+This project implements an **AMBA AHB-to-APB Bridge** in Verilog and verifies its correctness using **UVM (Universal Verification Methodology)** and **SystemVerilog Assertions (SVA)**. The bridge converts high-speed AHB transactions into APB transactions while maintaining protocol compliance.
+
+The project demonstrates:
+- RTL design in Verilog
+- UVM-based functional verification
+- Assertion-Based Verification (ABV)
+- Formal verification using SystemVerilog Assertions
