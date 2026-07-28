@@ -1,0 +1,34 @@
+[options]
+mode prove
+depth 30
+expect pass
+
+[engines]
+smtbmc boolector
+
+[script]
+
+# Read RTL
+read -formal RTL/Bridge_Top.v
+read -formal RTL/AHB_slave_interface.v
+read -formal RTL/APB_FSM_Controller.v
+
+# Read SVA files
+read -formal sva/bridge_top_sva.sv
+read -formal sva/APB_FSM_Controller_sva.sv
+read -formal sva/AHB_slave_interface_sva.sv
+read -formal sva/bridge_assumptions.sv
+
+# Elaborate the design
+prep -top Bridge_Top
+
+[files]
+
+RTL/Bridge_Top.v
+RTL/AHB_slave_interface.v
+RTL/APB_FSM_Controller.v
+
+sva/bridge_top_sva.sv
+sva/APB_FSM_Controller_sva.sv
+sva/AHB_slave_interface_sva.sv
+sva/bridge_assumptions.sv
