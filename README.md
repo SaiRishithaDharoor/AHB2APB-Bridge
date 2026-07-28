@@ -1,2 +1,2 @@
 # AHB2APB-Bridge
-Design and verification of AHB to APB bridge in Verilog.
+Designed and implemented an AHB-to-APB bridge in Verilog and developed a UVM-based Verification IP (VIP) to verify its functionality.
