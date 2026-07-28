@@ -1,2 +1,2 @@
 # AHB2APB-Bridge
-Design of AHB to APB bridge in Verilog.
+Design and verification of AHB to APB bridge in Verilog.
